@@ -12,32 +12,154 @@ html,
 	height: 100%;
 }
 
+/* Text Styles */
+.h1-regular {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+}
+.h1-semibold {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 50px;
+}
+.h1-bold{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+}
+.h2-regular {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+}
+.h2-semibold {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 40px;
+}
+.h2-bold{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+}
+.h3-regular {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+}
+.h3-semibold {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 35px;
+}
+.h3-bold{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+}
+.h4-regular {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+}
+.h4-semibold {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+}
+.h4-bold{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+}
+.h5-regular {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+}
+.h5-semibold {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+}
+.h5-bold{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+}
+.h6-regular {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+.h6-semibold {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+}
+.h6-bold{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+}
+
+
+.p1-regular{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+color: #333333;
+}
+
+
+
+
 .swiper {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  height: 80%;
-  object-fit: contain;
+	display: block;
+	height: 80%;
+	object-fit: contain;
 }
