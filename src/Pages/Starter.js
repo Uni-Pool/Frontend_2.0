@@ -9,9 +9,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination } from "swiper";
+import { useNavigate } from "react-router-dom";
 
 function Starter() {
-  const [index, setIndex] = useState(0);
+	const [index, setIndex] = useState(0);
+	let navigate = useNavigate();
 	const text = [
 		{
 			heading: "Taxi fare too high ?",
@@ -62,7 +64,9 @@ function Starter() {
 					{text[index].content}
 				</h3>
 			</div>
-			<button className='rounded-3xl bg-primary font-semibold text-base text-white py-3 px-8'>
+			<button
+				onClick={() => navigate("/login")}
+				className='rounded-3xl bg-primary font-semibold text-base text-white py-3 px-8'>
 				{" "}
 				Get Splitting !
 			</button>
