@@ -9,9 +9,6 @@ function App() {
 	},2000)
 
 
-
-
-
 	return (
 		<div className = "h-full bg-primary flex flex-col py-32"> 
 			<div className = "flex justify-center">
