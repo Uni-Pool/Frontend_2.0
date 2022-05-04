@@ -8,7 +8,7 @@ function Register() {
 	return (
 		<div className='min-h-full flex flex-col'>
 			<img src={JoinUsImage} />
-			<form className='grow w-full flex flex-col px-10 justify-evenly'>
+			<form className='grow w-full flex flex-col gap-3 px-10 justify-evenly'>
 				{/* Google log in */}
 				<div className='rounded-xl flex bg-primary'>
 					<img
@@ -23,7 +23,7 @@ function Register() {
 					Or Follow The Road Less Travelled
 				</h4>
 
-				<div className='flex justify-between gap-3'>
+				<div className='flex justify-between gap-3 mt-3'>
 					<input
 						type='text'
 						placeholder='Enter Name'
@@ -37,7 +37,7 @@ function Register() {
 						required
 					/>
 				</div>
-				<div className='flex justify-between gap-3'>
+				<div className='flex justify-between gap-3 mt-3'>
 					<input
 						type='password'
 						placeholder='Enter Password'
@@ -54,7 +54,7 @@ function Register() {
 
 				<button
 					type='submit'
-					className='w-full bg-primary rounded-xl text-white text-lg font-semibold p-3'>
+					className='w-full mt-3 bg-primary rounded-xl text-white text-lg font-semibold p-3'>
 					Start your journey {">"}
 				</button>
 			</form>
