@@ -1,0 +1,120 @@
+const plugin = require("tailwindcss/plugin");
+module.exports = {
+	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	theme: {
+		extend: {
+			screens: {
+				mobile: "400px",
+				// => @media (min-width: 640px) { ... }
+			},
+
+			backgroundImage: {
+				blob: "url('/src/assets/Login/Blob.svg')",
+			},
+
+			colors: {
+				primary: "#EA6237",
+				primary50: "#F4B09B",
+				primary10: "#FDEFEB",
+				secondary: "#EFA189",
+				secondary50: "#F7D0C4",
+				secondary10: "#FDF6F3",
+				textMain: "#252525",
+				caption: "#5C5C5C",
+				neutral: "#333333",
+				neutral50: "#828282",
+				neutral10: "#D1D1D1",
+				Attention: "#FDFFAD",
+				Attention50: "#FCFDC9",
+				Attention10: "#FDFEE4",
+				Success: "#E4FFC1",
+				Success50: "#EFFEDC",
+				Success10: "#F7FFED",
+				Warning: "#FED078",
+				Warning50: "#FFDFA1",
+				Warning10: "#FFEFD0",
+				Error: "#FF9393",
+				Error50: "#FFF4F4",
+				Error10: "#FFFAFA",
+			},
+			width: {
+				"10%": "10%",
+				"25%": "25%",
+				"30%": "30%",
+				half: "50%",
+				"60%": "60%",
+				"80%": "80%",
+				"90%": "90%",
+				"100%": "100%",
+				"125%": "125%",
+				"150%": "150%",
+				"200%": "200%",
+				"250%": "250%",
+				"300%": "330%",
+				"100vw": "100vw",
+			},
+			height: {
+				"10%": "10%",
+				"25%": "25%",
+				"30%": "30%",
+				half: "50%",
+				"60%": "60%",
+				"80%": "80%",
+				"90%": "90%",
+				"100%": "100%",
+				"125%": "125%",
+				"150%": "150%",
+				"200%": "200%",
+				"250%": "250%",
+				"300%": "330%",
+				"100vw": "100vw",
+			},
+
+			flexGrow: {
+				0.5: 0.5,
+				2: 2,
+			},
+
+			fontSize: {
+				display: "4rem",
+				h1: "3rem",
+				h2: "2.25rem",
+				h3: "2rem",
+				h4: "1.875rem",
+				h5: "1.5rem",
+				h6: "1.125rem",
+				p1: "1rem",
+				p2: "0.875rem",
+				c1: "0.75rem",
+				c2: "0.625rem",
+				c3: "0.5rem",
+			},
+		},
+	},
+	plugins: [
+		plugin(function ({ addComponents }) {
+			addComponents({
+				// ".bttn": {
+				// 	padding: "1rem 1.5rem",
+				// 	background: "#EF9B2B",
+				// 	borderRadius: "0.25rem",
+				// 	fontFamily: "Poppins",
+				// 	fontStyle: "normal",
+				// 	fontWeight: "normal",
+				// 	fontSize: "1.125rem",
+				// 	lineHeight: "27px",
+				// 	color: "#FFFFFF",
+				// 	textAlign: "center",
+				// },
+				".google-btn": {},
+				".spacer": {
+					aspectRatio: "16/10",
+					width: "auto",
+					backgroundRepeat: "no-repeat",
+					backgroundPosition: "center bottom",
+					backgroundSize: "cover",
+				},
+			});
+		}),
+	],
+};
