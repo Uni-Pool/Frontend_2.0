@@ -6,6 +6,7 @@ import "./index.css";
 import Starter from "./Pages/Starter";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Find from "./Pages/Find";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
@@ -15,6 +16,7 @@ root.render(
 				<Route path='/getstarted' element={<Starter />} />
 				<Route path='/login' element={<Login />} />
 				<Route path='/register' element={<Register />} />
+				<Route path='/find' element={<Find />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
