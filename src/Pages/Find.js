@@ -16,7 +16,7 @@ function Find() {
 					<FindForm />
 				</div>
 				<img src={OR_BAR_Find} />
-				<div className='h-2/5 my-4 px-12 py-8 rounded-3xl bg-secondary10 shadow-md'>
+				<div className='h-2/5 my-4 mb-14 px-12 py-8 rounded-3xl bg-secondary10 shadow-md'>
 					<div className='h-1/2 flex flex-col items-center '>
 						<h3 className='text-center font-bold'> Create Your Own Pool</h3>
 						<button className='bg-primary px-6 py-2 rounded-full text-white mt-4 '>

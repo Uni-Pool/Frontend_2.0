@@ -27,8 +27,25 @@ export const Map = () => {
 			});
 		}
 	};
+
+	const setDefaultLocation = (error) => {
+		switch (error.code) {
+			case error.PERMISSION_DENIED:
+				{
+					if (map.current) return;
+					map.current = new mapboxgl.Map({
+						container: mapContainer.current,
+						style: "mapbox://styles/mapbox/streets-v11",
+						center: [75.7873, 26.9124],
+						zoom: zoom,
+					});
+				}
+				break;
+		}
+	};
+
 	const getLocation = () => {
-		navigator.geolocation.getCurrentPosition(setLocation);
+		navigator.geolocation.getCurrentPosition(setLocation, setDefaultLocation);
 	};
 
 	return <div ref={mapContainer} className='h-1/2 rounded-t-3xl' />;
