@@ -48,5 +48,5 @@ export const Map = () => {
 		navigator.geolocation.getCurrentPosition(setLocation, setDefaultLocation);
 	};
 
-	return <div ref={mapContainer} className='h-1/2 rounded-t-3xl' />;
+	return <div ref={mapContainer} className='h-2/5 rounded-t-3xl' />;
 };
